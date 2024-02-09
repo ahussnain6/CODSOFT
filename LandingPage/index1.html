@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        nav{
+            overflow: hidden;
+            width: 100vw;
+            height: 13vh;
+            background-color: rgb(1, 1, 43);
+            color: white;
+            position: relative;
+            display: flex;
+            gap: 90vh;
+            font-size: 3vh;
+            padding-top: 3vh;
+            padding-left: 5vh;
+        }
+        @media screen and (width > 890px) {
+            nav{
+                overflow: hidden;
+            width: 100%;
+            height: 12vh ;
+            background-color: rgb(1, 1, 43);
+            color: white;
+            gap: 38vw;
+            display: flex;
+            font-size: 3vh;
+            padding-top: 2.5vh;
+            padding-left: 3vh;
+        }
+        .boxes{
+    width: 100%;
+    height: 70vh;
+ display: flex;
+ justify-content: center;
+ gap: 3vh;
+ flex-direction: row;
+}
+        .rside .list{
+            width: 46vw;
+            /* border: 2px solid white; */
+            display: inline-block;
+        }
+        .rside .list ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 1vh 2.1vh 1vh ;
+        }
+        .rside .list ul {
+            text-align: center;
+            margin-right: -12vh;
+        }
+        .rside .menu-btn{
+            display: none;
+        }
+        .b1{
+    background-image: url(cod1.webp);
+    background-size:100% 100%;
+    border: 2px solid grey;
+height: 50vh ;
+width: 30% ;
+border-radius: 1.4vh;
+box-shadow: darkgray 0px 5px 15px;
+}
+.b2{
+    background-image: url(cod2.jpeg);
+    border: 2px solid grey;
+height: 50vh ;
+background-size:100% 100%;
+width: 30% ;
+border-radius: 1.4vh;
+box-shadow: darkgray 0px 5px 15px;
+}
+.b3{
+    background-image: url(cod3.jpg);
+    border: 2px solid grey;
+height: 50vh ;
+width: 30% ;
+background-size:100% 100%;
+border-radius: 1.4vh;
+box-shadow: darkgray 0px 5px 15px;
+}
+        }
+        @media screen and (890px >= width > 780px) {
+            nav{
+                overflow: hidden;
+            width: 100%;
+            height: 12vh ;
+            background-color: rgb(1, 1, 43);
+            color: white;
+            gap: 47vh;
+            display: flex;
+            font-size: 3vh;
+            padding-top: 2.5vh;
+            padding-left: 3vh;
+        }
+        .rside .list{
+            width: 46vw;
+            /* border: 2px solid white; */
+            display: inline-block;
+        }
+        .rside .list ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 1vh 2.1vh 1vh ;
+        }
+        .rside .list ul {
+            text-align: center;
+            margin-right: -5vh;
+        }
+        .rside .menu-btn{
+            display: none;
+        }
+        .boxes{
+    width: 100%;
+    height: 70vh;
+ display: flex;
+ justify-content: center;
+ gap: 3vh;
+ flex-direction: row;
+}
+        }
+        @media screen and (780px >= width > 400px) {
+            nav{
+            width: 100%;
+            height: 12vh ;
+            background-color: rgb(1, 1, 43);
+            color: white;
+            /* gap: 13.6vh; */
+            display: flex;
+            font-size: 3vh;
+            padding-top: 2.5vh;
+            padding-left: 3vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .rside {
+            position: absolute;
+            right: 0%;
+            /* border: 2px solid black; */
+        }
+        .rside .list{
+            display: none;
+        }
+        .rside .menu-btn__burger{
+          position: absolute;
+          top: 2.3vh;
+          /* right: -5%; */
+        }
+        main .fpart{
+    background-image: url("image.png");
+    width: 100%;
+    background-size:100% 100%;
+    height: 90vh;
+}
+.b1{
+    background-image: url(cod1.webp);
+    background-size:100% 100%;
+    border: 2px solid grey;
+height: 50vh ;
+width: 100% ;
+border-radius: 1.4vh;
+box-shadow: darkgray 0px 5px 15px;
+}
+.b2{
+    background-image: url(cod2.jpeg);
+    border: 2px solid grey;
+height: 50vh ;
+background-size:100% 100%;
+width: 100% ;
+border-radius: 1.4vh;
+box-shadow: darkgray 0px 5px 15px;
+}
+.b3{
+    background-image: url(cod3.jpg);
+    border: 2px solid grey;
+height: 50vh ;
+width: 100% ;
+background-size:100% 100%;
+border-radius: 1.4vh;
+box-shadow: darkgray 0px 5px 15px;
+}
+.spart{
+    padding-top: 10vh;
+    width: 100%;
+    border: 4px solid black;
+ height: 90vh;
+ background-color: rgb(11, 11, 122);
+}
+.boxes{
+    width: 100%;
+    height: 70vh;
+ display: flex;
+ justify-content: center;
+ gap: 3vh;
+ flex-direction: column;
+}
+        }
+        @media screen and (345px < width <= 400px){
+        .boxes{
+    width: 100%;
+    height: 70vh;
+ display: flex;
+ justify-content: center;
+ gap: 3vh;
+ flex-direction: column;
+}
+.b1{
+    background-image: url(cod1.webp);
+    background-size:100% 100%;
+    border: 2px solid grey;
+height: 50vh;
+width: 100%;
+border-radius: 1.4vh;
+box-shadow: darkgray 0px 5px 15px;
+}
+.b2{
+    background-image: url(cod2.jpeg);
+    border: 2px solid grey;
+height: 50vh ;
+background-size:100% 100%;
+width: 100% ;
+border-radius: 1.4vh;
+box-shadow: darkgray 0px 5px 15px;
+}
+.b3{
+    background-image: url(cod3.jpg);
+    border: 2px solid grey;
+height: 50vh ;
+width: 100% ;
+background-size:100% 100%;
+border-radius: 1.4vh;
+box-shadow: darkgray 0px 5px 15px;
+}
+            nav{
+            width: 100%;
+            height: 19vw ;
+            background-color: rgb(1, 1, 43);
+            color: white;
+            gap: 9vh;
+            display: flex;
+            font-size: 3vh;
+            padding-top: 2.5vh;
+            padding-left: 3vh;overflow: hidden;
+        }
+        .rside {
+            position: absolute;
+            right: 0%;
+        }
+        .rside .list{
+            display: none;
+        }
+        .rside .menu-btn__burger{
+          position: absolute;
+          top: 2.3vh;
+        }
+      
+    }
+    @media screen and (width <= 345px){
+            nav{
+            width: 100%;
+            height: 9.5vh;
+            background-color: rgb(1, 1, 43);
+            color: white;
+            gap: 2vh;
+            display: flex;
+            font-size: 3vh;
+            padding-top: 2.5vh;
+            padding-left: 3vh;
+        }
+        .b1{
+    background-image: url(cod1.webp);
+    background-size:100% 100%;
+    border: 2px solid grey;
+height: 50vh ;
+width: 100% ;
+border-radius: 1.4vh;
+box-shadow: darkgray 0px 5px 15px;
+}
+.b2{
+    background-image: url(cod2.jpeg);
+    border: 2px solid grey;
+height: 50vh ;
+background-size:100% 100%;
+width: 100% ;
+border-radius: 1.4vh;
+box-shadow: darkgray 0px 5px 15px;
+}
+.b3{
+    background-image: url(cod3.jpg);
+    border: 2px solid grey;
+height: 50vh ;
+width: 100% ;
+background-size:100% 100%;
+border-radius: 1.4vh;
+box-shadow: darkgray 0px 5px 15px;
+}
+
+
+        .rside {
+            position: absolute;
+            right:-3%;
+        }
+        .rside .list{ display: none; }
+        .rside .menu-btn__burger{
+          position: absolute;
+          top: 1.5vh;
+        }
+    }
+        .lside h1{
+            font-size: 3.5vh;
+            /* width: 50vw; */
+        }
+        .list ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 2vh 5vh ;
+        }
+        main{
+            position: relative;
+        }
+        footer{
+            position: relative;
+        }
+        * { margin: 0 ; padding : 0 ; box-sizing : border-box ; }
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  /* border: 3px solid #fff; */
+}
+.menu-btn__burger {
+  width: 50px;
+  /* position: absolute; */
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}
+.rside .menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before {
+  transform: translateY(-16px);
+}
+.menu-btn__burger::after {
+  transform: translateY(16px);
+}
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+main .fpart{
+    background-image: url("image.png");
+    width: 100%;
+    background-size:100% 100%;
+    height: 90vh;
+}
+.spart{
+    padding-top: 10vh;
+    width: 100%;
+    border: 4px solid black;
+ height: 90vh;
+ background-color: rgb(11, 11, 122);
+}
+.boxes{
+    width: 100%;
+    height: 70vh;
+ /* display: flex; */
+ /* justify-content: center; */
+ /* flex-wrap: wrap; */
+ /* flex-direction: row; */
+ /* gap: 3vh; */
+ /* padding:0 auto; */
+}
+.b1:hover{
+transform: scale(1.06,1.06);
+}
+
+.b2:hover{
+    transform: scale(1.06,1.06);
+}
+.b3:hover{
+    transform: scale(1.06,1.06);
+}
+footer{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+    height: 39vh;
+    width: 100%;
+    background-color: rgb(1, 1, 43);
+}
+.f1 h1{
+    padding-top: 3.9vh;
+text-align: center;
+color: white;
+}
+.f2 ul li{
+    color: white;
+    font-size: 3.2vh;
+    font-weight: 700;
+}
+.f1 ul{
+    list-style: none;
+    margin-top: 4vh;
+    margin-left: 2vh;
+text-align: center;
+display: flex;
+flex-direction: column;
+gap: 3.5vh;
+}
+.f2 ul{
+    list-style: none;
+    margin: 8vh 7vh 5.5vh;
+text-align: center;
+display: flex;
+gap: 3vh;
+flex-direction: column;
+}
+.f1 ul li{
+    color: white;
+    font-size: 3.2vh;
+    font-weight: 700;
+}
+    </style>
+</head>
+<body>
+    <nav> <div class="lside"><h1>Ali Hussnain</h1></div> <div class="rside">
+        <div class="menu-btn"><div class="menu-btn__burger"></div> </div>
+          <div class="list"><ul>
+            <li>Home</li><li>Contact</li><li>About</li><li>Address</li>
+        </ul></div></div></nav>  <main>
+      <div class="fpart"></div>
+      <div class="spart">
+        <div class="boxes">
+            <div class="b1"></div><div class="b2"> </div><div class="b3"></div></div></div>  
+    </main>
+    <footer>
+      <div class="f1">
+        <h1 class="h1">Services</h1>
+        <ul>
+            <li>Web Development</li>
+            <li>App Development</li>
+            <li>Web Designing</li>
+        </ul>
+    </div>
+    <div class="f2">
+        <ul >
+            <li>About</li>
+            <li>Privacy Policy</li>
+            <li>Contact</li>
+            <li>Advertise</li>
+        </ul>
+    </div>
+
+    </footer>
+</body>
+</html>
