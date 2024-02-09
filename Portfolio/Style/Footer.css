@@ -1,0 +1,23 @@
+#contact{
+    margin-top: 2vh;
+    width: 100%;
+    height: 10vh;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap:wrap ;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+}
+ .fleft{
+  width: 50%;
+  height: 10vh;
+  border: 2px solid black;
+  font-size: 3vh;
+}
+ .fright{
+width: 50%;
+height: 10vh;
+border: 2px solid black;
+font-size: 3vh;
+}
